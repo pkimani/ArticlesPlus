@@ -1,0 +1,17 @@
+# /etc/systemd/system/uwsgi.service
+
+[Unit]
+Description=uWSGI Service
+After=syslog.target
+
+[Service]
+EnvironmentFile=/home/pkimani/getting-started-app/Configuration/environment_variables
+ExecStartPre=/bin/sleep 5
+ExecStart=/home/pkimani/venv/bin/uwsgi --ini /home/pkimani/getting-started-app/Configuration/uWSGI/uwsgi-ssl.ini
+Restart=always
+KillSignal=SIGQUIT
+Type=notify
+NotifyAccess=all
+
+[Install]
+WantedBy=multi-user.target
