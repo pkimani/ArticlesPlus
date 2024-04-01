@@ -1,0 +1,15 @@
+# /etc/systemd/system/nextjs.service
+
+[Unit]
+Description=Next.js Server
+Requires=nginx postgresql
+After=nginx postgresql
+
+[Service]
+Type=simple
+User=pkimani
+ExecStart=/home/pkimani/getting-started-app/Configuration/Nextjs/start-nextjs.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

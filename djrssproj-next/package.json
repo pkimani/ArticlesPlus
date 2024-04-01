@@ -1,0 +1,42 @@
+{
+  "name": "djrssproj-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "node postinstall.js"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.2",
+    "@mui/lab": "^5.0.0-alpha.158",
+    "@mui/material": "^5.15.2",
+    "@tanstack/react-query": "^5.17.0",
+    "axios": "^1.6.5",
+    "dompurify": "^3.0.6",
+    "html-react-parser": "^5.0.11",
+    "html-truncate": "^1.2.2",
+    "isomorphic-dompurify": "^2.0.0",
+    "jsdom": "^23.0.1",
+    "lodash": "^4.17.21",
+    "luxon": "^3.4.4",
+    "next": "^14.0.4",
+    "punycode": "^2.3.1",
+    "react": "^18",
+    "react-dom": "^18.2.0",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-intersection-observer": "^9.5.3",
+    "react-query": "^3.39.3",
+    "react-window": "^1.8.10",
+    "swr": "^2.2.4",
+    "use-debounce": "^10.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4"
+  }
+}
